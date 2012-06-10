@@ -2,3 +2,6 @@
 .settings
 .project
 index.php
+.idea
+.DS_Store
+__MACOSX
