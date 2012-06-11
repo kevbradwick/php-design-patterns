@@ -1,5 +1,7 @@
 <?php
 
+namespace Patterns\Singleton;
+
 /**
  * Singleton.
  *
