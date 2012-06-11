@@ -1,6 +1,8 @@
 <?php
 
-require_once realpath(__DIR__ . '/../') . '/GreetingInterface.php';
+namespace Patterns\Decorator\Decorators;
+
+use Patterns\Decorator\GreetingInterface;
 
 /**
  * UpperClassDecorator
@@ -8,7 +10,7 @@ require_once realpath(__DIR__ . '/../') . '/GreetingInterface.php';
  * @author Kevin Bradwick <kbradwick@gmail.com>
  * @link   https://github.com/kevbradwick/php-design-patterns
  */
-class UpperClassDecorator implements GreetingInterface
+class UpperCaseDecorator implements GreetingInterface
 {
     /**
      * @var Greeting
@@ -20,7 +22,7 @@ class UpperClassDecorator implements GreetingInterface
      *
      * @param GreetingInterface $greeting the greeting
      *
-     * @return UpperClassDecorator
+     * @return UpperCaseDecorator
      */
     public function __construct(GreetingInterface $greeting)
     {

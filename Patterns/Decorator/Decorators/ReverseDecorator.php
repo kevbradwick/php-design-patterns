@@ -1,6 +1,8 @@
 <?php
 
-require_once realpath(__DIR__ . '/../') . '/GreetingInterface.php';
+namespace Patterns\Decorator\Decorators;
+
+use Patterns\Decorator\GreetingInterface;
 
 /**
  * ReverseDecorator

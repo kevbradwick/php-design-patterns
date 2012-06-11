@@ -1,6 +1,8 @@
 <?php
 
-require_once 'GreetingInterface.php';
+namespace Patterns\Decorator;
+
+use Patterns\Decorator\GreetingInterface;
 
 /**
  * Greeting

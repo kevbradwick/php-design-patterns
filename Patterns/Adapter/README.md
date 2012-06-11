@@ -3,13 +3,21 @@
 The adapter pattern is useful for changing an objects existing interface for
 use in new functionality.
 
-## The example
+```
+require_once __DIR__ . '/loader.php';
 
-The existing classes `ErrorObject` and `ConsoleLog` work together to output a
-message to standard out. A new logger, `EchoLog` will echo out the error object
-and set HTTP headers based on the status code. The `DetailedErrorAdapter`
-extends the existing `ErrorObject` to expose the status code and introduces a
-new method, `getErrorCode`, which is then used by `EchoLog`.
+use Patterns\Adapter;
 
-The advantage of using the Adapter pattern is so that the existing
-implementation remains untouched leaving regression failures an impossibility.
+$error = new Adapter\ErrorObject('500:Internal Server Error');
+$logger = new Adapter\ConsoleLog($error);
+
+// output the error message to stdout
+$logger->write();
+
+// adapt the existing ErrorObject to expose error code
+$error = new Adapter\DetailedErrorAdapter('500:Internal Server Error');
+
+// use the adapted ErrorObject using new functionality
+$logger = new Adapter\EchoLog($error);
+$logger->write();
+```
