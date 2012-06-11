@@ -2,7 +2,8 @@
 
 namespace Patterns\Decorator\Decorators;
 
-use Patterns\Decorator\GreetingInterface;
+use Patterns\Decorator\GreetingInterface,
+    Patterns\Decorator\Greeting;
 
 /**
  * ReverseDecorator
@@ -22,7 +23,7 @@ class ReverseDecorator implements GreetingInterface
      *
      * @param GreetingInterface $greeting the greeting
      *
-     * @return UpperClassDecorator
+     * @return UpperCaseDecorator
      */
     public function __construct(GreetingInterface $greeting)
     {

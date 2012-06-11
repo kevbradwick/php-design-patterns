@@ -2,7 +2,8 @@
 
 namespace Patterns\Decorator\Decorators;
 
-use Patterns\Decorator\GreetingInterface;
+use Patterns\Decorator\GreetingInterface,
+    Patterns\Decorator\Greeting;
 
 /**
  * UpperClassDecorator

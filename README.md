@@ -9,3 +9,4 @@ These are example design patterns that can be used to solve common problems.
 * [Decorator](https://github.com/kevbradwick/php-design-patterns/tree/master/Patterns/Decorator)
 * [Delegate](https://github.com/kevbradwick/php-design-patterns/tree/master/Patterns/Delegate)
 * [Singleton](https://github.com/kevbradwick/php-design-patterns/tree/master/Patterns/Singleton)
+* [Strategy](https://github.com/kevbradwick/php-design-patterns/tree/master/Patterns/Strategy)
