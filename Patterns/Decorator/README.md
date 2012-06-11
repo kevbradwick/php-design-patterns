@@ -19,3 +19,6 @@ echo $decorator->sayHello(); // "HELLO WORLD"
 $decorator = new Decorator\Decorators\ReverseDecorator($greeting);
 echo $decorator->sayHello(); // "dlroW olleH"
 ```
+
+### PHP Design Patterns
+[Back to all patterns](https://github.com/kevbradwick/php-design-patterns)

@@ -21,3 +21,6 @@ $error = new Adapter\DetailedErrorAdapter('500:Internal Server Error');
 $logger = new Adapter\EchoLog($error);
 $logger->write();
 ```
+
+### PHP Design Patterns
+[Back to all patterns](https://github.com/kevbradwick/php-design-patterns)
